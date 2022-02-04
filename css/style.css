@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pinkColor: rgb(204, 48, 113);
+    --lightPinkColor: rgb(221, 97, 148);
+    --blueColor: rgb(69, 198, 202);
+}
+
+html {
+    font-family: Lato, 'sans-serif';
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 500px;
+    height: 650px;
+    border-radius: 10px;
+    background-color: var(--pinkColor);
+}
+
+.blue {
+    background-color: var(--blueColor);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div {
+    display: none;
+}
+
+.container > div.active {
+    position: relative;
+    display: block;
+}
+
+/* Countdown */
+
+.countdown-timer {
+    height: 100%;
+}
+
+.container > div > i {
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+}
+
+.container > div > i:hover {
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+}
+
+.countdown-timer > div {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pomodoros {
+    font-size: 30px;
+}
+
+.countdown {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    font-size: 30px;
+    line-height: 196px;
+    text-align: center;
+}
+
+.play-stop {
+    width: 70px;
+    font-size: 35px;
+}
+
+.play-stop.flex {
+    flex-direction: row;
+}
+
+.play-stop i {
+    display: none;
+}
+
+.play-stop i.activeBtn {
+    display: block;
+}
+
+/* Settings */
+
+.settings {
+    height: 100%;
+}
+
+.settings > div {
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0 15px;
+    
+}
+
+.grid > span {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: var(--pinkColor);
+    align-self: center;
+    line-height: 35px;
+}
+
+.settings-element {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.settings-element .minus,
+.settings-element .plus {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--lightPinkColor);
+    color: white;
+}
+
+.settings-element .minus:hover, 
+.settings-element .plus:hover {
+    cursor: pointer;
+}

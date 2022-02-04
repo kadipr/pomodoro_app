@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="countdown-timer active">
+            <i class="fas fa-cog settings-icon"></i>
+
+            <div class="flex">
+                <span class="pomodoros">0 / 10</span>
+                <span class="countdown">25 : 00</span>
+                <div class="play-stop flex">
+                    <i class="fas fa-play play activeBtn"></i>
+                    <i class="fas fa-pause pause"></i>
+                    <i class="fas fa-stop stop activeBtn"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings">
+            <i class="fas fa-times x-icon"></i>
+
+            <div class="grid">
+                <span> Work duration</span>
+                <span class="settings-element">
+                    <span class="minus">-</span><span class="duration pomodoros-duration">25</span><span class="plus">+</span>
+                </span>
+
+                <span>Short break duration</span>
+                <span class="settings-element">
+                    <span class="minus">-</span><span class="duration">5</span><span class="plus">+</span>
+                </span>
+
+                <span>Long break duration</span>
+                <span class="settings-element">
+                    <span class="minus">-</span><span class="duration">15</span><span class="plus">+</span>
+                </span>
+
+                <span>Pomodoros</span>
+                <span class="settings-element">
+                    <span class="minus">-</span><span class="duration pomodoros-quantity">10</span><span class="plus">+</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
